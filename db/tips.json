@@ -1,13 +1,27 @@
 [
     {
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
         "title": "Next Oil change",
         "text": "March 15, 2024",
         "note_id": "60e0"
     },
     {
+        "title": "From web",
+        "text": "test",
+        "note_id": "7afa"
+    },
+    {
         "title": "One more test",
         "text": "to check database",
         "note_id": "8c3e"
+    },
+    {
+        "title": "Exercise",
+        "text": "everyday",
+        "note_id": "e39a"
     },
     {
         "title": "Watch football",
@@ -20,23 +34,8 @@
         "note_id": "1dc4"
     },
     {
-        "title": "Challenge 11",
-        "text": "due 1/29/2024",
-        "note_id": "48b0"
-    },
-    {
-        "title": "DMV",
-        "text": "registration due",
-        "note_id": "97e3"
-    },
-    {
-        "title": "Super Bowl",
-        "text": "February 13, 2024",
-        "note_id": "9d2b"
-    },
-    {
-        "title": "From web",
-        "text": "1/29/2024",
-        "note_id": "231e"
+        "title": "Sell car",
+        "text": "Honda",
+        "note_id": "a424"
     }
 ]

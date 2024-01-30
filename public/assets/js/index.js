@@ -88,10 +88,11 @@ const handleNoteDelete = (e) => {
   // Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
 
-  const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
-
-  if (activeNote.id === noteId) {
+  const note = e.target;                                                //note_id
+  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).note_id;
+  console.log(JSON.parse(note.parentElement.getAttribute('data-note')));
+               //note_id
+  if (activeNote.note_id === noteId) {
     activeNote = {};
   }
 
@@ -103,8 +104,9 @@ const handleNoteDelete = (e) => {
 
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
-  e.preventDefault();
+  e.preventDefault();                                                     //note_id
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
+  console.log((e.target.parentElement.getAttribute('data-note')));
   renderActiveNote();
 };
 
