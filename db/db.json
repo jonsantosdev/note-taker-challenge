@@ -2,41 +2,31 @@
     {
         "title": "Next Oil change",
         "text": "March 15, 2024",
-        "note_id": "60e0"
-    },
-    {
-        "title": "One more test",
-        "text": "to check database",
-        "note_id": "8c3e"
+        "id": "60e0"
     },
     {
         "title": "Watch football",
         "text": "tomorrow",
-        "note_id": "b405"
+        "id": "b405"
     },
     {
         "title": "Get gas can",
         "text": "for camping",
-        "note_id": "1dc4"
-    },
-    {
-        "title": "Challenge 11",
-        "text": "due 1/29/2024",
-        "note_id": "48b0"
+        "id": "1dc4"
     },
     {
         "title": "DMV",
         "text": "registration due",
-        "note_id": "97e3"
+        "id": "97e3"
     },
     {
-        "title": "Super Bowl",
-        "text": "February 13, 2024",
-        "note_id": "9d2b"
+        "title": "rain tomorrow",
+        "text": "jacket",
+        "id": "b807"
     },
     {
-        "title": "From web",
-        "text": "1/29/2024",
-        "note_id": "231e"
+        "title": "help",
+        "text": "challenge 12\n",
+        "id": "23e5"
     }
 ]

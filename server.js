@@ -25,18 +25,6 @@ app.get('*', (req, res) =>
     res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
-// GET: note selected on left and populated data on the right side
-app.get('/:tip_id', (req, res) => {
-    const noteId = req.params.note_id;
-    readFromFile('./db/db.json')
-      .then((data) => JSON.parse(data))
-      .then((json) => {
-        const result = json.filter((note) => note.note_id === noteId);
-        return result.length > 0
-          ? res.json(result)
-          : res.json('No tip with that ID');
-      });
-  });
 
 app.post('/api/notes', (req, res) => {
     
@@ -46,7 +34,7 @@ app.post('/api/notes', (req, res) => {
         const newNote = {
             title,
             text,
-            note_id: uuid(),
+            id: uuid(), //id
         };
 
         readAndAppend(newNote, './db/db.json');
@@ -57,15 +45,15 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
-// Delete a particular note
-app.delete('/api/notes/:note_id', (req, res) => {
-    const noteId = req.params.note_id;
+// Delete a particular note //id
+app.delete('/api/notes/:id', (req, res) => {
+    const noteId = req.params.id; //id
     console.log(noteId);
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
         // Make a new array of all notes except the one with the ID provided in the URL
-        const result = json.filter((note) => note.note_id !== noteId);
+        const result = json.filter((note) => note.id !== noteId); //id
   
         // Save that array to the filesystem
         writeToFile('./db/db.json', result);
